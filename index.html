@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bookmarker</title>
+</head>
+<body>
+   <div class="container">
+
+   <div class="text py-2 m-5 text-center">
+    <h1>Bookmarker</h1>
+   </div>
+
+   <div class="info-table">
+
+    <div class="text-center">
+        <h2>
+            <i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+        </h2>
+    </div>
+
+    <div class="site-name mb-4">    
+        <label for="bookmarkName" class="pb-2 fw-semibold">
+        <i class="fa-solid fa-book-bookmark pe-2"></i> 
+        Site Name</label>
+        <input type="text" placeholder="Bookmark Name" class="form-control" id="bookmarkName">
+    </div>
+
+    <div class="site-url mb-4">
+        <label for="websiteURL" class="pb-2 fw-semibold">
+        <i class="fa-solid fa-link pe-2"></i> 
+        Site Name</label>
+        <input type="text" placeholder="Website URL" class="form-control" id="websiteURL">
+    </div>
+
+   <div class="text-center">
+    <button class="btn btn-submit px-5 text-white" id="btn">Submit</button>
+   </div>
+
+   </div>
+
+<table class="table my-2 text-center">
+    <thead>
+        <tr>
+            <th>Index</th>
+            <th>Bookmark Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+
+        </tr>
+    </thead>
+
+    <tbody id="tableData">
+       
+    </tbody>
+</table>
+
+   </div>
+
+
+
+   
+
+    <script src="main.js"></script>
+</body>
+</html>
